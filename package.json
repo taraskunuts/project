@@ -1,0 +1,17 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run frontend\"",
+    "server": "json-server --watch db.json --port 3000",
+    "frontend": "parcel index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^9.2.0",
+    "parcel": "^2.15.4"
+  }
+}
